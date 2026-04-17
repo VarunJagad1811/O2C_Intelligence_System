@@ -6,4 +6,6 @@ graphviz
 matplotlib
 scikit-learn
 groq
+langchain
+langchain-groq
 pm4py
