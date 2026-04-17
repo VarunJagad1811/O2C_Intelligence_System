@@ -5,11 +5,10 @@ from groq import Groq
 from langchain_groq import ChatGroq
 from langchain_core.messages import SystemMessage, HumanMessage, ToolMessage
 from langchain_core.tools import tool
+
+# ✅ FINAL API SETUP (ONLY THIS)
 os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
-llm = ChatGroq(
-    model_name="llama-3.1-8b-instant",
-    temperature=0.1
-)
+
 # ==========================================
 # === 1. DEFINE AGENTIC TOOLS (AGENCY & RAG)
 # ==========================================
